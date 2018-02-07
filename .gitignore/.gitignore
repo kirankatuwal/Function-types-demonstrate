@@ -1,0 +1,52 @@
+#include<stdio.h>
+//sum of two number using all function types
+//function 1 type - both passing agrument
+int sum(int a,int b)
+{
+	int tot;
+	tot=a+b;
+	return tot;
+}
+//function 2 type - nothing passed
+void s(void)
+{
+	int a,b;
+	printf("enter two number\n ");
+	scanf("%d%d",&a,&b);
+	printf("the sum is %d\n",a+b);
+}
+//function 3 type - return type but no parameter passed
+int su(void)
+{
+	int a,b,t;
+	printf("enter two number \n");
+	scanf("%d%d",&a,&b);
+	t=a+b;
+	return t;
+}
+//function 4 type - no return type but value passed
+void suum(int a,int b)
+{
+	printf("the sum is %d\n",a+b);
+}
+//main function
+int main()
+{
+	int a,b;
+	printf("1");
+	printf("enter two number \n");
+	scanf("%d%d",&a,&b);
+	
+	//calling function 1
+	printf("The sum is %d\n",sum(a,b));
+	printf("2");
+	//calling function 2
+	s();
+	printf("3");
+	//calling function 3
+	printf("The sum is %d\n",su());
+	//calling function 4
+	suum(a,b);
+	printf("4");
+	return 0;
+}
